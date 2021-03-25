@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(232, 236, 240);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin: 2.5rem;
+    background: white;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.main-heading {
+    padding: 1.5rem;
+}
+
+.main-content {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main-content div {
+    padding: 0.3rem;
+}
+
+.available-positions {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.available-positions__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.get-in-touch-btn {
+    align-self: center;
+    border-radius: inherit;
+    padding: 10px;
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    background: #3547A1;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border: none;
+}
+
+.get-in-touch-btn:hover,
+.get-in-touch-btn:active,
+.get-in-touch-btn:focus {
+    background: rgb(14, 34, 136);
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (min-width: 780px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    } 
+    
+    body {
+        background: #F3F7FB;
+    }
+
+    .main-container {
+        display: flex;
+        background: white;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+        /* height: 95%; */
+        border-radius: 15px;
+        margin: 2.5rem;
+    }
+
+    .main-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .main-content {
+        margin: 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .main-content .about-para-1 :nth-child(2) {
+        padding-left: 7rem;
+    }
+
+    .available-positions {
+        margin: 2rem 0 0 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .available-positions__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .get-in-touch-btn {
+        align-self: center;
+        border-radius: 30px;
+        padding: 10px;
+        width: 320px;
+        margin: 0.5rem 0 0.5rem 0;
+        background: #3547A1;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        border: none;
+    }
+}
