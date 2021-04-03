@@ -141,29 +141,40 @@
     grid-template-areas: "title ."
                          "guest1-image guest1-info"
                          "guest2-image guest2-info"
-                         "guest3-image guest3-info";
+                         "guest3-image guest3-info"
+                         "host-title ."
+                         "host-image host-info";
     background: #6F696D;
     grid-area: aside-people;
 }
 
 .guests__title {
     grid-area: title;
+    padding: 2rem;
     align-self: center;
-    justify-self: center;
+    justify-self: start;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     /* margin: 0.5rem 0.5rem 0.5rem 3rem; */
 }
 
-.guests__guest-image {
-    grid-area: image;
+.guests__guest-image,
+.guests__host-image {
     border-radius: 50%;
-    width:40%;
-    height: 80%;
+    width:50%;
+    height: 90%;
+    margin: 1rem 0 0 2rem;
 }
 
-.guests__guest-name {
+.guests__guest {
+    /* background: green; */
+    padding: 0.5rem 2rem;
+}
+
+.guests__guest-name,
+.guests__guest-role,
+.guests__host-title {
     color: white;
 }
 
@@ -171,7 +182,7 @@
 /*Placing the guests*/ 
 .guest1 {
     grid-area: guest1-image;
-    padding: 0 2.5rem;
+    /* padding: 0 2.5rem; */
 }
 
 .guest1-info {
@@ -200,6 +211,31 @@
 
 .guest3-info {
     grid-area: guest3-info;
+    justify-self: start;
+    align-self: center;
+}
+
+.guests__host-title {
+    grid-area: host-title;
+    padding: 2rem;
+    align-self: center;
+    justify-self: start;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.guests__host {
+    grid-area: host-image;
+    border-radius: 50%;
+    height: 90%;
+    width: 80%;
+    margin: 0 0 1rem 2rem;
+}
+
+.host-info {
+    grid-area: host-info;
+    color: white;
     justify-self: start;
     align-self: center;
 }
