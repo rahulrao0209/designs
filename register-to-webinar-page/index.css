@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+.main-container {
+    display: grid;
+    background: #272732;
+    /* margin-left: 16rem; */
+    /* width: 80%; */
+    /* height: 90vh; */
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: 'date-and-heading aside'
+                         'info-content aside-share'
+                         'joining-form aside-people'
+    /* grid-auto-rows: 7rem; */
+}
+
+.main-heading {
+    padding: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    grid-area: date-and-heading;
+}
+
+.main-heading p {
+    color: white;
+}
+
+.main-heading__title {
+    font-size: larger;
+    font-weight: bold;
+    margin: 0.5rem 0 0 0;
+}
+
+.info-content {
+    padding: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    grid-area: info-content;
+}
+
+.info-content__content {
+    color: white;
+}
+
+.join-form {
+    /* display: grid; */
+    grid-area: joining-form;
+    padding: 1rem;
+}
+
+.join-form__title {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    font-weight: bold;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.join-form__form {
+    display: grid;
+    background: #272732;
+    grid-template-columns: repeat(2, 50%);
+    grid-row-gap: 1rem;
+}
+
+.join-form__form label {
+    color: white;
+}
+
+.join-form__form input {
+    padding: 0.5rem;
+    width: 90%;
+    border: 1px solid #8C9F9F;
+    background: #272732;
+}
+
+.join-form__form select {
+    padding: 0.5rem;
+    border: 1px solid #8C9F9F;
+    width: 90%;
+    background: #272732;
+    color: white;
+}
+
+.join-form__form textarea {
+    border: 1px solid #8C9F9F;
+    background: #272732;
+    color: white;    
+    width: 89%;
+    height: 5rem;
+}
+
+#join-form__field__cb {
+    width: 10%;
+}
+
+#receive-email-field {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#text-area-field {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.aside {
+    grid-area: aside;
+    background: #6F696D;
+}
+
+.share-icons {
+    grid-area: aside-share;
+    background: #6F696D;
+    color: white;
+}
+
+.share-icons p {
+    margin: 0.5rem 0.5rem 0.5rem 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;    
+}
+
+.share-icons__icons li {
+    padding: 0.5rem;
+    list-style-type: none;
+    display: inline;
+}
+
+.guests {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "title ."
+                         "guest1-image guest1-info"
+                         "guest2-image guest2-info"
+                         "guest3-image guest3-info";
+    background: #6F696D;
+    grid-area: aside-people;
+}
+
+.guests__title {
+    grid-area: title;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    /* margin: 0.5rem 0.5rem 0.5rem 3rem; */
+}
+
+.guests__guest-image {
+    grid-area: image;
+    border-radius: 50%;
+    width:40%;
+    height: 80%;
+}
+
+.guests__guest-name {
+    color: white;
+}
+
+
+/*Placing the guests*/ 
+.guest1 {
+    grid-area: guest1-image;
+    padding: 0 2.5rem;
+}
+
+.guest1-info {
+    grid-area: guest1-info;
+    justify-self: start;
+    align-self: center;
+}
+
+.guest2 {
+    grid-area: guest2-image;
+    padding: 0 2.5rem;
+    margin: 0 auto;
+}
+
+.guest2-info {
+    grid-area: guest2-info;
+    justify-self: start;
+    align-self: center;
+}
+
+.guest3 {
+    grid-area: guest3-image;
+    padding: 0 2.5rem;
+    margin: 0 auto;
+}
+
+.guest3-info {
+    grid-area: guest3-info;
+    justify-self: start;
+    align-self: center;
+}
+
+.register-btn {
+    padding: 1rem;
+    color: #272732;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}

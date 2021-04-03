@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #F1EEF7;
+    height: 100vh;
+}
+
+.main-container {
+    display: grid;
+    background: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    /* height: 80%; */
+    min-height: 100vh;
+}
+
+.main-heading {
+    /* width: 15rem; */
+    font-size: x-large;
+    margin: 1rem auto;
+    color: green;
+}
+
+.search-bar {
+    text-align: center;
+    height: 2rem;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.search-bar input {
+    padding: 1rem 2rem;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.feature-options {
+    display: grid;
+    margin: 1rem 0;
+    grid-gap: 1rem;
+}
+
+.feature-options__option {
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.feature-options__title {
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+}
+
+.feature-options__info {
+    text-align: center;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+/*colors*/
+#feature-options__price-calc {
+    background: #C1B2C3;
+}
+
+#feature-options__name-stats {
+    background: #a2a5fd;
+}
+
+#feature-options__stats-table {
+    background: #f0c1d0;
+}
+
+.feature-options__button {
+    margin: 0 auto;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 10rem;
+    border: none;
+}
+
+.feature-options__link {
+    display: inline-block;
+    margin: 1rem auto;
+    color: green;
+}
+
+@media (min-width: 800px) {
+    html {
+        height: 100%;
+    }
+    body {
+        font-size: small;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .main-container {
+        display: grid;
+        margin: 5rem auto;
+        border: 2px solid black;
+        grid-auto-rows: 4rem;
+        min-width: 45rem;
+        max-width: 50rem;
+        min-height: 80%;
+    }   
+
+    .feature-options {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .search-bar input {
+        /* padding: 1rem 2rem; */
+        width: 90%;
+        margin: 0 auto;
+    }
+}

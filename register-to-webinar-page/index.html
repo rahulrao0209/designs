@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Register to Webinar</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="aside">
+        </div>
+
+        <div class="share-icons">
+            <p>Share</p>
+            <ul class="share-icons__icons">
+                <li>
+                    <img src="./icons/facebook.png" alt="facebook">
+                </li>
+                <li>
+                    <img src="./icons/twitter.png" alt="twitter">
+                </li>
+                <li>
+                    <img src="./icons/linkedin-icon.png" alt="linkedin">
+                </li>
+            </ul>
+        </div>
+
+        <div class="guests">
+
+            <p class="guests__title">Guests</p>
+            <div class="guests__guest guest1">
+                <img class="guests__guest-image" src="./icons/girl1.jpg" alt="girl1">
+            </div>
+            <div class="guest1-info">
+                <h2 class="guests__guest-name">Lisa Alvin</h2>
+                <p class="guests__guest-role">Co-founder</p>
+            </div>
+
+            <div class="guests__guest guest2">
+                <img  class="guests__guest-image" src="./icons/man2.jpg" alt="man2">
+            </div>
+            <div class="guest2-info">
+                <h2 class="guests__guest-name">Peter Scott</h2>
+                <p class="guests__guest-role">Head of education</p>
+            </div>
+
+            <div class="guests__guest guest3">
+                <img class="guests__guest-image" src="./icons/girl2.jpg" alt="girl2">
+            </div>
+            <div class="guest3-info">
+                <h2 class="guests__guest-name">Jenny Pick</h2>
+                <p class="guests__guest-role">Founder</p>
+            </div>
+
+        </div>
+
+        <div class="main-heading">
+            <p class="main-heading__date">March 17, 2021 12:00</p>
+            <p class="main-heading__title">The help of Augumented Reality
+                and Holograms.
+            </p>
+        </div>
+
+        <div class="info-content">
+            <p class="info-content__content">
+                Use Augumented Reality to keep students engaged and
+                provide details explanations of models and course material.
+                In a 3D, AR Lab, students can pinch, zoom and rotate equipment
+                related to the course, for a fully emersive learning experience.
+            </p>
+        </div>
+
+        <div class="join-form">
+            <p class="join-form__title">Join the event</p>
+            <form class="join-form__form">
+                <div class="join-form__field">
+                    <label for="first-name">First name</label><br>
+                    <input type="text" placeholder="Enter your first name" name="first-name">
+                </div>
+
+                <div class="join-form__field">
+                    <label for="last-name">Last name</label><br>
+                    <input type="text" placeholder="Enter your last name" name="last-name">
+                </div>
+
+                <div class="join-form__field">
+                    <label for="business-email">Business email</label><br>
+                    <input type="email" placeholder="Enter your email" name="business-email">
+                </div>
+
+                <div class="join-form__field">
+                    <label for="job-title">Title</label><br>
+                    <input type="text" placeholder="What is your job title?" name="job-title">
+                </div>
+
+                <div class="join-form__field">
+                    <label for="company-name">Company name</label><br>
+                    <input type="text" placeholder="Where do you work?" name="company-name">
+                </div>
+
+                <div class="join-form__field">
+                    <label for="company-size">Company size</label><br>
+                    <select name="company-size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+
+                <div class="join-form__field" id="text-area-field">
+                    <label for="learn-about">What are you hoping to learn about?</label><br>
+                    <textarea name="learn-about" placeholder="Where do you work?">
+                    </textarea>
+                </div>
+
+                <div class="join-form__field" id="receive-email-field">
+                    <input type="checkbox" name="receive-emails" id="join-form__field__cb">
+                    <label for="receive-emails" id="receive-emails-label">
+                        I would like to receive emails about future webinars
+                    </label>
+                </div>
+
+                <button class="register-btn">
+                    Register for this event
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
