@@ -66,10 +66,19 @@ body {
     font-weight: 500;
     color: white;
 }
+
+.subscribe-btn:hover,
+.subscribe-btn:active {
+    background: #472eeb;
+}
+
+.subscribe-btn:focus {
+    outline: none; 
+}
 /*Checked*/ 
-#sponsorship {
+.checked {
     background: #dcdae6;
-} 
+}
 
 @media (min-width: 640px) {
     body {
@@ -133,10 +142,5 @@ body {
         border: none;
         font-weight: 500;
         color: white;
-    }
-    
- 
-    #sponsorship {
-        background: #dcdae6;
     }
 } 
