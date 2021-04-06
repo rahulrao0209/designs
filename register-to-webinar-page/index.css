@@ -11,16 +11,11 @@
 .main-container {
     display: grid;
     background: #272732;
-    margin: 0 0 0 16rem;
-    border-radius: 10px;
-    padding: 0 0 0 2rem;
-    /* width: 80%; */
-    /* height: 90vh; */
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: 'date-and-heading aside'
-                         'info-content aside-share'
-                         'joining-form aside-people'
-    /* grid-auto-rows: 7rem; */
+    grid-template-areas: 'date-and-heading'
+                         'info-content'
+                         'joining-form'
+                         'aside-share'
+                         'aside-people';
 }
 
 .main-heading {
@@ -51,6 +46,7 @@
     color: white;
 }
 
+/* FORM */
 .join-form {
     grid-area: joining-form;
     padding: 1rem;
@@ -62,13 +58,16 @@
     font-weight: 700;
     font-size: larger;
     font-weight: bold;
-    margin: 0.5rem 0 1.5rem 0;
+    /* margin: 0.5rem 0 1.5rem 0; */
+    padding: 0 15rem;
+    margin: 0.5rem auto;
 }
 
 .join-form__form {
     display: grid;
     background: #272732;
-    grid-template-columns: repeat(2, 50%);
+    /* grid-template-columns: repeat(2, 50%); */
+    justify-content: center;
     grid-row-gap: 1rem;
 }
 
@@ -78,7 +77,7 @@
 
 .join-form__form input {
     padding: 0.5rem;
-    width: 90%;
+    width: 100%;
     border: 1px solid #8C9F9F;
     background: #272732;
 }
@@ -92,7 +91,7 @@
 .join-form__form select {
     padding: 0.5rem;
     border: 1px solid #8C9F9F;
-    width: 90%;
+    width: 100%;
     background: #272732;
     color: white;
 }
@@ -101,7 +100,7 @@
     border: 1px solid #8C9F9F;
     background: #272732;
     color: white;    
-    width: 89%;
+    width: 100%;
     height: 5rem;
 }
 
@@ -119,9 +118,21 @@
     grid-column-end: -1;
 }
 
-.aside {
-    grid-area: aside;
-    background: #6F696D;
+.register-btn {
+    padding: 1rem;
+    width: 100%;
+    border:none;
+    color: #272732;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.register-btn:hover,
+.register-btn:focus {
+    margin: 0;
+    color: white;
+    background: black;
+    outline: none;
 }
 
 .share-icons {
@@ -246,21 +257,228 @@
     align-self: center;
 }
 
-.register-btn {
-    padding: 1rem;
-    border:none;
-    color: #272732;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-}
-
-.register-btn:hover,
-.register-btn:focus {
-    color: white;
-    background: black;
-    outline: none;
-}
-
-@media (min-width: 590px) {
-
+@media (min-width: 900px) {
+    .main-container {
+        display: grid;
+        justify-content: center;
+        background: #272732;
+        margin: 0 0 0 16rem;
+        border-radius: 10px;
+        padding: 0 0 0 2rem;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: 'date-and-heading aside'
+                             'info-content aside-share'
+                             'joining-form aside-people';
+    }
+    
+    .join-form {
+        grid-area: joining-form;
+        padding: 1rem;
+    }
+    
+    .join-form__title {
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: larger;
+        font-weight: bold;
+        padding: 0;
+        margin: 0.5rem 0 1.5rem 0;
+    }
+    
+    .join-form__form {
+        display: grid;
+        background: #272732;
+        grid-template-columns: repeat(2, 50%);
+        grid-row-gap: 1rem;
+    }
+    
+    .join-form__form label {
+        color: white;
+    }
+    
+    .join-form__form input {
+        padding: 0.5rem;
+        width: 90%;
+        border: 1px solid #8C9F9F;
+        background: #272732;
+    }
+    
+    .join-form__form input:focus,
+    .join-form__form select:focus,
+    .join-form__form textarea:focus {
+        outline: none;
+    }
+    
+    .join-form__form select {
+        padding: 0.5rem;
+        border: 1px solid #8C9F9F;
+        width: 90%;
+        background: #272732;
+        color: white;
+    }
+    
+    .join-form__form textarea {
+        border: 1px solid #8C9F9F;
+        background: #272732;
+        color: white;    
+        width: 89%;
+        height: 5rem;
+    }
+    
+    #join-form__field__cb {
+        width: 10%;
+    }
+    
+    #receive-email-field {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    
+    #text-area-field {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    
+    .aside {
+        grid-area: aside;
+        background: #6F696D;
+    }
+    
+    .share-icons {
+        grid-area: aside-share;
+        background: #6F696D;
+        color: white;
+    }
+    
+    .share-icons p {
+        margin: 0.5rem 0.5rem 0.5rem 3rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;    
+    }
+    
+    .share-icons__icons li {
+        padding: 0.5rem;
+        list-style-type: none;
+        display: inline;
+    }
+    
+    .guests {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "title ."
+                             "guest1-image guest1-info"
+                             "guest2-image guest2-info"
+                             "guest3-image guest3-info"
+                             "host-title ."
+                             "host-image host-info";
+        background: #6F696D;
+        grid-area: aside-people;
+    }
+    
+    .guests__title {
+        grid-area: title;
+        padding: 2rem;
+        align-self: center;
+        justify-self: start;
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        /* margin: 0.5rem 0.5rem 0.5rem 3rem; */
+    }
+    
+    .guests__guest-image,
+    .guests__host-image {
+        border-radius: 50%;
+        width:50%;
+        height: 90%;
+        margin: 1rem 0 0 2rem;
+    }
+    
+    .guests__guest {
+        /* background: green; */
+        padding: 0.5rem 2rem;
+    }
+    
+    .guests__guest-name,
+    .guests__guest-role,
+    .guests__host-title {
+        color: white;
+    }
+    
+    
+    /*Placing the guests*/ 
+    .guest1 {
+        grid-area: guest1-image;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .guest1-info {
+        grid-area: guest1-info;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    .guest2 {
+        grid-area: guest2-image;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .guest2-info {
+        grid-area: guest2-info;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    .guest3 {
+        grid-area: guest3-image;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .guest3-info {
+        grid-area: guest3-info;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    .guests__host-title {
+        grid-area: host-title;
+        padding: 2rem;
+        align-self: center;
+        justify-self: start;
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+    }
+    
+    .guests__host {
+        grid-area: host-image;
+        border-radius: 50%;
+        height: 90%;
+    }
+    
+    .host-info {
+        grid-area: host-info;
+        color: white;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    .register-btn {
+        padding: 1rem;
+        border:none;
+        color: #272732;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+    }
+    
+    .register-btn:hover,
+    .register-btn:focus {
+        color: white;
+        background: black;
+        outline: none;
+    }
 }
