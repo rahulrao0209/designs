@@ -11,7 +11,9 @@
 .main-container {
     display: grid;
     background: #272732;
-    /* margin-left: 16rem; */
+    margin: 0 0 0 16rem;
+    border-radius: 10px;
+    padding: 0 0 0 2rem;
     /* width: 80%; */
     /* height: 90vh; */
     grid-template-columns: repeat(2, 50%);
@@ -50,7 +52,6 @@
 }
 
 .join-form {
-    /* display: grid; */
     grid-area: joining-form;
     padding: 1rem;
 }
@@ -80,6 +81,12 @@
     width: 90%;
     border: 1px solid #8C9F9F;
     background: #272732;
+}
+
+.join-form__form input:focus,
+.join-form__form select:focus,
+.join-form__form textarea:focus {
+    outline: none;
 }
 
 .join-form__form select {
@@ -182,7 +189,8 @@
 /*Placing the guests*/ 
 .guest1 {
     grid-area: guest1-image;
-    /* padding: 0 2.5rem; */
+    padding: 0;
+    margin: 0;
 }
 
 .guest1-info {
@@ -193,7 +201,7 @@
 
 .guest2 {
     grid-area: guest2-image;
-    padding: 0 2.5rem;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -205,7 +213,7 @@
 
 .guest3 {
     grid-area: guest3-image;
-    padding: 0 2.5rem;
+    padding: 0;
     margin: 0 auto;
 }
 
@@ -229,8 +237,6 @@
     grid-area: host-image;
     border-radius: 50%;
     height: 90%;
-    width: 80%;
-    margin: 0 0 1rem 2rem;
 }
 
 .host-info {
@@ -242,7 +248,19 @@
 
 .register-btn {
     padding: 1rem;
+    border:none;
     color: #272732;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
+}
+
+.register-btn:hover,
+.register-btn:focus {
+    color: white;
+    background: black;
+    outline: none;
+}
+
+@media (min-width: 590px) {
+
 }
