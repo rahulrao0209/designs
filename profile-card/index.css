@@ -69,6 +69,7 @@
 .profile-info__extra {
     display: flex;
     margin: 2rem 0 0 0;
+    padding: 0.5rem;
     min-width: 27rem;
     max-width: 30rem;
     justify-content: space-around;
