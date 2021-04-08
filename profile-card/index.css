@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    background: #DFE2EF;
+    margin: 1rem 0 0 0;
+    border-radius: 50%;
+}
+
+.profile-photo img {
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-info__name {
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+}
+
+.profile-info__role {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0.5rem 0 0 0;
+}
+
+.profile-info__options {
+    margin: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info__options h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 1rem 0;
+    color: #888B9B;
+}
+
+.profile-info__options h2:hover {
+    color: #414698;
+    text-decoration-line: underline;
+}
+
+.profile-info__extra {
+    display: flex;
+    margin: 2rem 0 0 0;
+    min-width: 27rem;
+    max-width: 30rem;
+    justify-content: space-around;
+}
+
+.profile-info__extra img {
+    margin: 0 0 0 2.5rem;
+}
+
+.profile-info__extra p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.buttons__send-message {
+    padding: 1.5rem;
+    width: 20rem;
+    border:none;
+    margin: 0.5rem 0;
+    background:  #414698;
+    border-radius:  10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.buttons__send-message:hover,
+.buttons__send-message:active {
+    background:  #20246b;
+}
+
+.buttons__send-message:focus {
+    outline: none;
+}
+
+.buttons__follow {
+        padding:1.5rem;
+        margin: 0.5rem 0;
+        width: 20rem;
+        background:  white;
+        color: #414698;
+        border-radius:  10px;
+        border: 1px solid #414698;
+        font-family: 'Open Sans', sans-serif;
+}
+
+.buttons__follow:hover,
+.buttons__follow:active {
+    background: #414698;
+    color:white;
+}
+
+.buttons__follow:focus {
+    outline: none;
+}
+
+.options {
+    display: flex;
+    margin: 1.5rem 0;
+    flex-direction: column;
+}
+
+.options label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.options label span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.options select {
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background: #DFE2EF;
+    margin: 0.5rem 0;
+    width: 20rem;
+}
+
+.options select:nth-child(4) {
+    margin-bottom: 2rem;
+}
+
+.options select:focus {
+    outline: none;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Profile Card</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="profile-photo">
+            <img src="./images/profile-girl-square.jpg" alt="profile-girl">
+        </div>
+
+        <div class="profile-info">
+            <h1 class="profile-info__name">Idiko Gaspar</h1>
+            <h3 class="profile-info__role">UX Designer and Chemist of Aesthetics</h3>
+
+            <div class="profile-info__extra">
+                <div class="profile-info__extra__location">
+                    <img src="./icons/location-32px.png" alt="location">
+                    <p>Bergen, Norway</p>
+                </div>
+                <div class="profile-info__extra__social">
+                    <img src="./icons/twitter-32px.png" alt="twitter">
+                    <p>uidesigndaily</p>
+                </div>
+                <div class="profile-info__extra__link">
+                    <img src="./icons/link-32px.png" alt="link">
+                    <p>uidesigndaily.com</p>
+                </div>
+            </div>
+
+            <div class="profile-info__options">
+                <h2 class="profile-info__posts">Posts</h2>    
+                <h2 class="profile-info__albums">Albums</h2>
+                <h2 class="profile-info__stats">Stats</h2>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="buttons__send-message">Send a message</button>
+            <button class="buttons__follow">Following</button>
+        </div>
+
+        <div class="options">
+            <label for="filter">Filter <span>Photos</span></label>
+            <select name="options__filter">
+                <option value="Photos">Photos</option>
+                <option value="Designs">Designs</option>
+                <option value="Posters">Posters</option>
+            </select>
+
+            <label for="filter">Sort By <span>Popularity</span></label>
+            <select name="options__sort">
+                <option value="following">Following</option>
+                <option value="popularity">Popularity</option>
+                <option value="new">New</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
