@@ -166,3 +166,82 @@
 .options select:focus {
     outline: none;
 }
+
+@media (min-width: 390px) {
+    
+    body {
+        background: #DFE2EF;
+    }
+
+    .main-container {
+        display: grid;
+        background: white;
+        padding: 2rem 5rem;
+        /* grid-template-columns: repeat(3, auto); */
+        grid-template-columns: 0.5fr auto auto;
+    }
+
+    .profile-info {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+
+    .profile-info__options {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        grid-row-start: 2;
+    }
+
+    .buttons {
+        /* grid-row-start: 2; */
+        grid-row-start: 1;
+        grid-column-start: 2;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-self: flex-end;
+        width: 50%;
+    }
+
+    .buttons__send-message {
+        padding: 0.8rem;
+        width: 17rem;
+        border:none;
+        margin: 0 0.5rem 0 0; 
+        background:  #414698;
+        border-radius:  5px;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .buttons__follow {
+        padding:0.8rem;
+        width: 17rem;
+        background:  white;
+        color: #414698;
+        border-radius:  5px;
+        border: 1px solid #414698;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .options {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-start: span 2;
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        align-self: flex-end;
+    }
+
+    .options select {
+        padding: 0;
+        border-radius: 5px;
+        border: none;
+        background: #DFE2EF;
+        width: 5rem;
+        margin: 0rem 1.5rem;
+    }
+}
