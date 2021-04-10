@@ -167,7 +167,7 @@
     outline: none;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 900px) {
     
     body {
         background: #DFE2EF;
