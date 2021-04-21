@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: small;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #E3E3FB;
+    height: 100%;
+}
+
+.background {
+    background: #6363CE;
+    height: 550px;
+    width: 500px;
+    margin: 0 auto;
+    left: 30rem;
+    top: 3rem;
+    position:absolute;
+}
+
+.main-container {
+    position: relative;
+    z-index: 10;
+    width: 65%;
+    min-height: 40rem;
+    background: white;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 4rem 0 0.5rem 0;
+}
+
+.intro-content p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #7474A8;
+}
+
+.intro-content p:hover {
+    color: #3434b3;
+}
+
+.plans {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5rem 0.5rem;
+    min-width: 258px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plans h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; 
+    margin: 0.5rem 0 2rem 0;   
+}
+
+.plans p {
+    color: #7A7C83;
+    margin: 1rem auto 0 auto;
+}
+
+.plans p>span {
+    color: black;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.plans button {
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    width: 55%;
+    background: #6363CE;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;    
+}
+
+.plans button:focus {
+    outline: none;
+}
+
+.plans button:hover,
+.plans button:active {
+    background: #3535c4;
+}
+
+.plans div {
+    display: flex;
+    width: 258px;
+    height: 320px;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    border: 1px solid #ACACC8;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .background {
+        display: none;
+    }
+}
+
